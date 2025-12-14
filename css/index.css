@@ -1,0 +1,28 @@
+
+body {
+    background-color: #320f54;
+    color: skyblue;
+    margin-left: 25%
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    width: 75%;
+}
+
+a:link {
+    color: #f78fda;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    background-color: #f78fda;
+    color: lightblue;
+}
+
+a:active {
+    background-color: #f78fda;
+    color: lightblue;
+}
