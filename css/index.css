@@ -2,12 +2,17 @@
 body {
     background-color: #320f54;
     color: skyblue;
+    font-family: 'Courier New';
     margin-left: 20%;
     margin-right: 20%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     width: 75%;
+}
+
+p {
+    font-size: 14pt;
 }
 
 a:link {
