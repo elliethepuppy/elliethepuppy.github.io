@@ -163,9 +163,9 @@ one, you will lose that file.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#make_desktop%28exe%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method" class="signature"><strong>.make_desktop</strong>(exe : String, exe_dir : Path | String, mime_type : String | Nil = <span class="n">nil</span>)</a>
+        <a href="#make_desktop%28exe%3AString%2Cexe_name%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method" class="signature"><strong>.make_desktop</strong>(exe : String, exe_name : String, exe_dir : Path | String, mime_type : String | Nil = <span class="n">nil</span>)</a>
         
-          <div class="summary"><p><code><a href="MakeDesktop.html#make_desktop%28exe%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method">.make_desktop</a></code> takes an executable file, <em>exe : String</em>, the directory it's in, <em>exe_dir : Path | String</em>, and an optional <em>mime_type : String | Nil</em>, which defaults to <code>nil</code>, and then writes a .desktop file containing: [Desktop Entry] Type=Application Name=<em>exe</em> Path=<em>exe_dir</em> Exec=./<em>exe</em> MimeType=<em>mime_type</em> (only if not <code>nil</code> when called)</p></div>
+          <div class="summary"><p><code><a href="MakeDesktop.html#make_desktop%28exe%3AString%2Cexe_name%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method">.make_desktop</a></code> takes an executable file, <em>exe : String</em>, the directory it's in, <em>exe_dir : Path | String</em>, its name <em>exe_name : String</em>, and an optional <em>mime_type : String | Nil</em>, which defaults to <code>nil</code>, and then writes a .desktop file containing: [Desktop Entry] Type=Application Name=<em>exe_name</em> Path=<em>exe_dir</em> Exec=./<em>exe</em> MimeType=<em>mime_type</em> (only if not <code>nil</code> when called)</p></div>
         
       </li>
     
@@ -193,23 +193,23 @@ one, you will lose that file.</p>
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="make_desktop(exe:String,exe_dir:Path|String,mime_type:String|Nil=nil)-class-method">
+    <div class="entry-detail" id="make_desktop(exe:String,exe_name:String,exe_dir:Path|String,mime_type:String|Nil=nil)-class-method">
       <div class="signature">
         
-        def self.<strong>make_desktop</strong>(exe : String, exe_dir : Path | String, mime_type : String | Nil = <span class="n">nil</span>)
+        def self.<strong>make_desktop</strong>(exe : String, exe_name : String, exe_dir : Path | String, mime_type : String | Nil = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#make_desktop%28exe%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method">#</a>
+        <a class="method-permalink" href="#make_desktop%28exe%3AString%2Cexe_name%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p><code><a href="MakeDesktop.html#make_desktop%28exe%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method">.make_desktop</a></code> takes an executable file, <em>exe : String</em>,
-the directory it's in, <em>exe_dir : Path | String</em>, and an
-optional <em>mime_type : String | Nil</em>, which defaults to <code>nil</code>,
-and then writes a .desktop file containing:
+          <p><code><a href="MakeDesktop.html#make_desktop%28exe%3AString%2Cexe_name%3AString%2Cexe_dir%3APath%7CString%2Cmime_type%3AString%7CNil%3Dnil%29-class-method">.make_desktop</a></code> takes an executable file, <em>exe : String</em>,
+the directory it's in, <em>exe_dir : Path | String</em>, its name
+<em>exe_name : String</em>, and an optional <em>mime_type : String | Nil</em>,
+which defaults to <code>nil</code>, and then writes a .desktop file containing:
 [Desktop Entry]
 Type=Application
-Name=<em>exe</em>
+Name=<em>exe_name</em>
 Path=<em>exe_dir</em>
 Exec=./<em>exe</em>
 MimeType=<em>mime_type</em> (only if not <code>nil</code> when called)</p>
