@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Crystal Docs 1.10.1">
-<meta name="crystal_docs.project_version" content="0.1.0">
+<meta name="crystal_docs.project_version" content="main-dev">
 <meta name="crystal_docs.project_name" content="time_it">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="time_it">
-  <title>TimeIt - time_it 0.1.0</title>
+  <title>TimeIt - time_it main-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        0.1.0
+        main-dev
       </span>
     </div>
   </div>
@@ -152,7 +152,7 @@ just feels so painfully straightforward...</p>
   <dl>
     
       <dt class="entry-const" id="VERSION">
-        <strong>VERSION</strong> = <code><span class="s">&quot;0.1.0&quot;</span></code>
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.1.1&quot;</span></code>
       </dt>
       
     
@@ -180,14 +180,14 @@ just feels so painfully straightforward...</p>
       <li class="entry-summary">
         <a href="#format_times%28times%3AArray%28Float64%29%29%3AString-instance-method" class="signature"><strong>#format_times</strong>(times : Array(Float64)) : String</a>
         
-          <div class="summary"><p><code><a href="TimeIt.html#format_times%28times%3AArray%28Float64%29%29%3AString-instance-method">#format_times</a></code> is simply a helper function that formats the times in <code><a href="TimeIt.html#time_it%28exe_with_args%3AString%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code>'s <em>all_times</em> array into a nice, numbered, and line-broken string for presentation to the user and placement in the log file</p></div>
+          <div class="summary"><p><code><a href="TimeIt.html#format_times%28times%3AArray%28Float64%29%29%3AString-instance-method">#format_times</a></code> is simply a helper function that formats the times in <code><a href="TimeIt.html#time_it%28exe%3AString%2Cargs%3AArray%28String%29%7CNil%3Dnil%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code>'s <em>all_times</em> array into a nice, numbered, and line-broken string for presentation to the user and placement in the log file</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#time_it%28exe_with_args%3AString%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method" class="signature"><strong>#time_it</strong>(exe_with_args : String, runs : Int32 = <span class="n">10</span>) : Tuple(String, String)</a>
+        <a href="#time_it%28exe%3AString%2Cargs%3AArray%28String%29%7CNil%3Dnil%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method" class="signature"><strong>#time_it</strong>(exe : String, args : Array(String) | Nil = <span class="n">nil</span>, runs : Int32 = <span class="n">10</span>) : Tuple(String, String)</a>
         
-          <div class="summary"><p><code><a href="TimeIt.html#time_it%28exe_with_args%3AString%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code> is the function that actually times the program.</p></div>
+          <div class="summary"><p><code><a href="TimeIt.html#time_it%28exe%3AString%2Cargs%3AArray%28String%29%7CNil%3Dnil%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code> is the function that actually times the program.</p></div>
         
       </li>
     
@@ -226,7 +226,7 @@ just feels so painfully straightforward...</p>
         <div class="doc">
           
           <p><code><a href="TimeIt.html#format_times%28times%3AArray%28Float64%29%29%3AString-instance-method">#format_times</a></code> is simply a helper function that formats
-the times in <code><a href="TimeIt.html#time_it%28exe_with_args%3AString%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code>'s <em>all_times</em> array into a nice,
+the times in <code><a href="TimeIt.html#time_it%28exe%3AString%2Cargs%3AArray%28String%29%7CNil%3Dnil%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code>'s <em>all_times</em> array into a nice,
 numbered, and line-broken string for presentation to the
 user and placement in the log file</p>
         </div>
@@ -237,18 +237,19 @@ user and placement in the log file</p>
       </div>
     </div>
   
-    <div class="entry-detail" id="time_it(exe_with_args:String,runs:Int32=10):Tuple(String,String)-instance-method">
+    <div class="entry-detail" id="time_it(exe:String,args:Array(String)|Nil=nil,runs:Int32=10):Tuple(String,String)-instance-method">
       <div class="signature">
         
-        def <strong>time_it</strong>(exe_with_args : String, runs : Int32 = <span class="n">10</span>) : Tuple(String, String)
+        def <strong>time_it</strong>(exe : String, args : Array(String) | Nil = <span class="n">nil</span>, runs : Int32 = <span class="n">10</span>) : Tuple(String, String)
 
-        <a class="method-permalink" href="#time_it%28exe_with_args%3AString%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#</a>
+        <a class="method-permalink" href="#time_it%28exe%3AString%2Cargs%3AArray%28String%29%7CNil%3Dnil%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p><code><a href="TimeIt.html#time_it%28exe_with_args%3AString%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code> is the function that actually times the program.
-it does this by taking a String <em>exe_with_args</em> and feeding
+          <p><code><a href="TimeIt.html#time_it%28exe%3AString%2Cargs%3AArray%28String%29%7CNil%3Dnil%2Cruns%3AInt32%3D10%29%3ATuple%28String%2CString%29-instance-method">#time_it</a></code> is the function that actually times the program.
+it does this by taking a <code>String</code> <em>exe</em> and (optionally)
+an <code>Array(String) | Nil</code> <em>args</em>, then feeding
 it to <code>Process.run</code> <em>runs</em> number of times, timing each run
 and placing it into an array for later formatting.</p>
         </div>
